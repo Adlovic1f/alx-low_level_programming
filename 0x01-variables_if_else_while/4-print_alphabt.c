@@ -3,24 +3,20 @@
 /**
  * main - function
  *
- * Decription: print alphabet in Lowercase and Uppercase
+ * Decription: Print all the letters except q and e
  *
  * Return: to 0 successful
  */
 int main(void)
 {
 	char cha_low = 'a';
-	char cha_up = 'A';
 
 	while (cha_low <= 'z')
 	{
+		if (cha_low == 'e' || cha_low == 'q')
+			cha_low++;
 		putchar(cha_low);
 		cha_low++;
-	}
-	while (cha_up <= 'Z')
-	{
-		putchar(cha_up);
-		cha_up++;
 	}
 	putchar('\n');
 	return (0);
