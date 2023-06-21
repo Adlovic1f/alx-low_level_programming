@@ -3,6 +3,8 @@
 /**
  * _islower - print lowercase character
  *
+ * @c : chechs input of function
+ *
  * Return: to 1 (success) to 0 rest
  */
 int _islower(int c)
