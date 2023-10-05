@@ -31,3 +31,19 @@ int _strlen(char *s)
 char *_strdup(char *str)
 {
 	char *dest;
+	unsigned int i;
+
+	if (str == NULL)
+		return (NULL);
+
+	dest = (char *)malloc((_strlen(str)) * sizeof(char));
+
+	if (dest == NULL)
+		return (NULL);
+
+	for (i = 0; str[i] != '\0'; i++)
+		dest[i] = str[i];
+	dest[i] = str[i];
+
+	return (dest);
+}
